@@ -1,0 +1,342 @@
+html {
+    font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
+    font-style: italic;
+    padding: 0;
+    color: #353535;
+    background: rgba(234,234,234,1.0);
+    display: block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+div#preloader {
+    width: 100%;
+    height: 100%;
+    background: rgba(234,234,234,1.0);
+    z-index: 100;
+    position: absolute;
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    overflow-x: hidden;
+    font-size: 11pt;
+}
+
+img {
+    border: none;
+}
+
+strong {
+    font-weight: normal;
+    color: #353535;
+    padding-left: 3px;
+    padding-right: 3px;
+    background: #e0e0e0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
+    font-size: 11pt;
+    font-style: italic;
+}
+
+#bkgd {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+a,a:link,a:visited,a:active,a:hover {
+    text-decoration: none;
+}
+
+#nav a,#nav a:link,#nav a:visited,section#about a,section#about a:link,section#about a:visited {
+    font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
+    color: #353535;
+    text-decoration: none;
+}
+
+#nav a:hover,section#about a:hover {
+    font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
+    color: #353535;
+    border-bottom: 1px solid gray;
+}
+
+#fxToggle {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+#fxToggle a,#fxToggle a:link,#fxToggle a:visited,#fxToggle a:active {
+    color: #353535;
+    opacity: .1;
+    padding: 3px;
+}
+
+#fxToggle a:hover {
+    color: rgba(234,234,234,1.0);
+    opacity: 1.0;
+    background: #353535;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.projectPreview {
+    display: block;
+    height: 400px;
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+header {
+    top: 0;
+    height: 160px;
+    position: absolute;
+    width: 100%;
+}
+
+header hr {
+    margin-left: 30px;
+    margin-right: 30px;
+    border: none;
+    border-top: 1px solid #353535;
+    opacity: .4;
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#nav {
+    left: 128px;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    padding: 0;
+    font-size: 11pt;
+    font-weight: lighter;
+}
+
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: lowercase;
+}
+
+section#works {
+    margin-top: 150px;
+    position: absolute;
+    width: 75%;
+}
+
+section#works ul {
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+section#works ul li {
+    float: left;
+    margin-right: 20px;
+    padding: 0;
+    text-align: center;
+}
+
+section#screens {
+    margin-top: 150px;
+    position: absolute;
+    margin-left: 300px;
+}
+
+section#screens ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 800px;
+    opacity: .0;
+}
+
+section#screens ul li {
+    display: none;
+}
+
+section#screens ul li img {
+    margin-bottom: 5px;
+}
+
+section#screens ul li img:first-of-type {
+    margin-top: 30px;
+}
+
+.projectThumbnail::selection,section#about img::selection {
+    background-color: #0ff;
+}
+
+.projectThumbnail::-moz-selection,section#about img::-moz-selection {
+    background-color: #0ff;
+}
+
+.projectThumbnail,#backImg {
+    border-radius: 50%;
+    display: block;
+}
+
+#backLink {
+    display: none;
+}
+
+#upLink {
+    height: 310px;
+    width: 310px;
+    position: absolute;
+    display: none;
+    bottom: 8px;
+    opacity: .0;
+}
+
+#upImg {
+    border-radius: 50%;
+}
+
+.projectDetails {
+    font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
+    text-transform: lowercase;
+    display: block;
+    text-align: center;
+    color: #000;
+}
+
+.projectTitle {
+    font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
+    font-size: 30pt;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.projectTags {
+    font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
+    font-style: italic;
+    font-size: 11pt;
+    color: #353535;
+    margin-bottom: 1px;
+    margin-top: 0;
+}
+
+small a,small a:link,small a:visited,small a:active {
+    color: #353535;
+    opacity: .2;
+    text-decoration: none;
+}
+
+small a:hover {
+    color: #353535;
+    opacity: .7;
+    text-decoration: none;
+    border-bottom: 1px solid #353535;
+}
+
+p.project_p {
+    font-style: italic;
+    font-weight: lighter;
+    font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
+    font-style: italic;
+    color: #353535;
+    margin-top: 0;
+    margin-bottom: 1px;
+}
+
+section#about {
+    display: none;
+   
+   /*position: absolute;*/
+    left: 30px;
+    width: 70%;
+    opacity: .0;
+    margin: auto;
+    margin-top: 150px;
+}
+
+section#about p {
+    display: block;
+    width: 450px;
+    float: right;
+}
+
+section#about img {
+    display: block;
+    float: left;
+}
+
+section#about p#hi {
+    font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
+    font-size: 30pt;
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+
+section#about p#aboutme_p {
+    height: 400px;
+    margin-top: 4px;
+    color: #353535;
+    font: italic 11pt/14.5pt Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
+}
+
+section#about p#aboutme_p span#hireme {
+    font-weight: normal;
+    color: #353535;
+    padding-left: 3px;
+    padding-right: 3px;
+    background: #fcc6ce;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
+    font-size: 11pt;
+    font-style: italic;
+}
+
+
+
+section#about ul#contacts {    
+    width: 270px;
+    list-style: none;
+}
+
+section#about ul#contacts li {
+    font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+section#about ul#contacts li hr {
+    border: none;
+    width: 10%;
+    border-top: 1px solid #353535;
+    opacity: .4;
+    margin: auto;
+    margin-top: 18px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
+
+display: block;
+text-align: left;
+color: #000;
+padding: 20px 40px;
+}
+
+footer hr {
+margin-top: 100%;
+}
