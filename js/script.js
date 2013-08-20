@@ -2,7 +2,7 @@ var spinner;
 var fx = true;
 var canvas;
 var context;
-var RADIUS = 360;
+var RADIUS = 260;
 var RADIUS_SCALE = 1;
 var RADIUS_SCALE_MIN = 1;
 var RADIUS_SCALE_MAX = 1;
@@ -76,9 +76,9 @@ $(document).ready(function () {
     }
 });
 $(window).load(function () {
-    $("nav#nav #nav_projects").css("pointer-events", "none");
-    $("nav#nav #nav_projects").css("cursor", "default");
-    $("nav#nav #nav_projects").css("opacity", "0.2");
+    $("nav#nav #nav_carousel").css("pointer-events", "none");
+    $("nav#nav #nav_carousel").css("cursor", "default");
+    $("nav#nav #nav_carousel").css("opacity", "0.2");
     $(".projectThumbnail").each(function () {
         var n = $(this);
         n.css({
@@ -98,6 +98,9 @@ $(window).load(function () {
         // this.src = d(this.src)
     });
     $(".projectPreview").click(f);
+     $("section#works").css("display", "none");
+     $("section#carousel").css("display", "block");
+     $("section#about").css("display", "none");
 
     function l() {
         overThumb = false;
@@ -133,7 +136,7 @@ $(window).load(function () {
             }, 500, "easeOutQuint", function () {})
         })
     }
-    
+
     function recordOutboundLink(link, category, action) {
       try {
         var pageTracker=_gat._getTracker("UA-25562800-1");
@@ -201,6 +204,11 @@ $(window).load(function () {
         $("nav#nav #nav_projects").animate({
             opacity: 1
         }, 500, "easeOutQuint");
+        $("nav#nav #nav_carousel").css("pointer-events", "auto");
+        $("nav#nav #nav_carousel").css("cursor", "auto");
+        $("nav#nav #nav_carousel").animate({
+            opacity: 1
+        }, 500, "easeOutQuint");
         if (page == "project") {
             $("section#screens ul").animate({
                 opacity: 0
@@ -219,8 +227,54 @@ $(window).load(function () {
             opacity: 0
         }, 500, "easeOutQuint", function () {
             $("section#works").css("display", "none");
+            $("section#carousel").css("display", "none");
             $("section#about").css("display", "block");
             $("section#about").animate({
+                opacity: 1
+            }, 500, "easeOutQuint")
+        })
+    }
+
+     function bg() {
+        overThumb = false;
+        a();
+        $("nav#nav #nav_about").css("pointer-events", "auto");
+        $("nav#nav #nav_about").css("cursor", "auto");
+        $("nav#nav #nav_about").animate({
+            opacity: 1
+        }, 500, "easeOutQuint");
+        $("nav#nav #nav_projects").css("pointer-events", "auto");
+        $("nav#nav #nav_projects").css("cursor", "auto");
+        $("nav#nav #nav_projects").animate({
+            opacity: 1
+        }, 500, "easeOutQuint");
+        $("nav#nav #nav_carousel").css("pointer-events", "none");
+        $("nav#nav #nav_carousel").css("cursor", "default");
+        $("nav#nav #nav_carousel").animate({
+            opacity: 0.2
+        }, 500, "easeOutQuint");
+
+        if (page == "project") {
+            $("section#screens ul").animate({
+                opacity: 0
+            }, 500, "easeOutQuint", function () {
+                $("section#screens ul").css("display", "none")
+            });
+            if ($("#upLink").css("display") == "block") {
+                $("#upLink").animate({
+                    opacity: 0
+                }, 500, "easeOutQuint", function () {
+                    $("#upLink").css("display", "none")
+                })
+            }
+        }
+        $("section#works").animate({
+            opacity: 0
+        }, 500, "easeOutQuint", function () {
+            $("section#works").css("display", "none");
+            $("section#about").css("display", "none");
+            $("section#carousel").css("display", "block");
+            $("section#carousel").animate({
                 opacity: 1
             }, 500, "easeOutQuint")
         })
@@ -237,10 +291,16 @@ $(window).load(function () {
         $("nav#nav #nav_projects").animate({
             opacity: 0.2
         }, 500, "easeOutQuint");
+        $("nav#nav #nav_carousel").css("pointer-events", "auto");
+        $("nav#nav #nav_carousel").css("cursor", "auto");
+        $("nav#nav #nav_carousel").animate({
+            opacity: 1
+        }, 500, "easeOutQuint");
         $("section#about").animate({
             opacity: 0
         }, 500, "easeOutQuint", function () {
             $("section#about").css("display", "none");
+            $("section#carousel").css("display", "none");
             $("section#works").css("display", "block");
             $("section#works").animate({
                 opacity: 1
@@ -300,6 +360,9 @@ $(window).load(function () {
     $("#nav #nav_about a").click(g);
     $("#nav #nav_projects a").attr("href", "#");
     $("#nav #nav_projects a").click(b);
+    $("#nav #nav_carousel a").attr("href", "#");
+    $("#nav #nav_carousel a").click(bg);
+
 
     function m() {
         if (jQuery.browser.mozilla && jQuery.browser.version.slice(0, 3) == "1.9") {
