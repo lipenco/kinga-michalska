@@ -101,6 +101,7 @@ $(window).load(function () {
      $("section#works").css("display", "none");
      $("section#carousel").css("display", "block");
      $("section#about").css("display", "none");
+     impress().init();
 
     function l() {
         overThumb = false;
