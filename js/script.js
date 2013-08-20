@@ -261,13 +261,13 @@ $(window).load(function () {
             }, 500, "easeOutQuint", function () {
                 $("section#screens ul").css("display", "none")
             });
-            if ($("#upLink").css("display") == "block") {
-                $("#upLink").animate({
-                    opacity: 0
-                }, 500, "easeOutQuint", function () {
-                    $("#upLink").css("display", "none")
-                })
-            }
+            // if ($("#upLink").css("display") == "block") {
+            //     $("#upLink").animate({
+            //         opacity: 0
+            //     }, 500, "easeOutQuint", function () {
+            //         $("#upLink").css("display", "none")
+            //     })
+            // }
         }
         $("section#works").animate({
             opacity: 0
@@ -311,7 +311,7 @@ $(window).load(function () {
                     $("section#screens ul").animate({
                         opacity: 1
                     }, 500, "easeOutQuint");
-                    if ($("#upLink").css("display") == "none" && $(document).height() > $(window).height() + 400) {
+                    if ($("#upLink").css("display") == "none" && $(document).height() > $(window).height() + 600) {
                         $("#upLink").css("display", "block");
                         $("#upLink").animate({
                             opacity: 1
@@ -319,6 +319,16 @@ $(window).load(function () {
                     }
                 }
             })
+        })
+        $("section#carousel").animate({
+            opacity: 0
+        }, 500, "easeOutQuint", function () {
+            $("section#works").css("display", "block");
+            $("section#about").css("display", "none");
+            $("section#carousel").css("display", "none");
+            $("section#carousel").animate({
+                opacity: 1
+            }, 500, "easeOutQuint")
         })
     }
     $(window).scroll(function () {
