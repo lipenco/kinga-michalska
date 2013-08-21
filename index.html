@@ -107,7 +107,7 @@
       <p class="projectTags">I've worked on : <strong>This and that</strong>.</p>
       <p class="project_p">Something : <strong>This and that</strong>.</p>
       <p class="project_p">Something : <strong>This and that</strong>.</p>
-      <img class="project_image" src="http://4.bp.blogspot.com/-dx0lzf5FYbs/UdCPwSVQnOI/AAAAAAAAIx0/NBiH8y41LLE/s640/3.jpg" width="800" height="600" alt="screenshot" />
+      <img class="project_image" src="img/07res.jpg" width="800" height="600" alt="screenshot" />
       <img class="project_image" src="http://4.bp.blogspot.com/-dx0lzf5FYbs/UdCPwSVQnOI/AAAAAAAAIx0/NBiH8y41LLE/s640/3.jpg" width="800" height="600" alt="screenshot" />
       <img class="project_image" src="http://4.bp.blogspot.com/-dx0lzf5FYbs/UdCPwSVQnOI/AAAAAAAAIx0/NBiH8y41LLE/s640/3.jpg" width="800" height="600" alt="screenshot" />
     </li>
@@ -184,8 +184,7 @@
      <div  class="step slide">
            <img src="http://4.bp.blogspot.com/-dx0lzf5FYbs/UdCPwSVQnOI/AAAAAAAAIx0/NBiH8y41LLE/s640/3.jpg">
     </div>
-     <div id="overview" class="step" data-scale="3">
-    </div>
+    
 </div>
   </section>  
 
@@ -209,7 +208,11 @@ function automatedPresentation() {
 
 <script src="js/impress-layout.js"> </script>
 <script src="js/impress.js"> </script>
-<script> automatedPresentation(); layoutCircleV2({ radius: 1187}); 
+<script> automatedPresentation(); 
+         layoutSnakeGrid({
+           numberOfColumns: 4,
+           distanceX: 1000,
+           distanceY: 1000 }); 
 </script>
 <script> var api = impress();</script>
 
