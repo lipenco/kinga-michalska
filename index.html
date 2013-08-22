@@ -39,6 +39,39 @@
         <hr />
     </header>
 
+    <section id="carousel">
+    <div id="impress">
+
+    <div class="step slide">
+            <img src="img/dance/07m.jpg">
+    </div>
+    
+    <div class="step slide">
+          <img src="img/rehab/1.jpg">
+    </div>
+
+    <div  class="step slide">
+           <img src="img/studio/01.jpg">
+    </div>
+     <div  class="step slide">
+           <img src="img/mama/2m.jpg">
+    </div>
+     <div  class="step slide">
+           <img src="img/dreamers/10.JPG">
+    </div>
+     <div  class="step slide">
+           <img src="img/studio/04m.jpg">
+    </div>
+     <div  class="step slide">
+           <img src="img/dance/04m.jpg">
+    </div>
+     <div  class="step slide">
+           <img src="img/family/08m.jpg">
+    </div>
+    
+</div>
+  </section>  
+
 
     <section id="works">
   <ul id="Projects">
@@ -249,82 +282,15 @@
     <li><a href="https://www.facebook.com/kinga.michalska.351" id="link_fb" class="contact_link" title="facebook profile" target="_blank" onClick="recordOutboundLink(this, 'About links', 'to facebook');return false;">facebook</a></li>
     </ul>
   </div>
+</section> 
 
-  </section> 
-
-
-
- 
-  <section id="carousel">
-    <div id="impress">
-
-    <div class="step slide">
-            <img src="img/dance/07m.jpg">
-    </div>
-    
-    <div class="step slide">
-          <img src="img/rehab/1.jpg">
-    </div>
-
-    <div  class="step slide">
-           <img src="img/studio/01.jpg">
-    </div>
-     <div  class="step slide">
-           <img src="img/mama/2m.jpg">
-    </div>
-     <div  class="step slide">
-           <img src="img/dreamers/10.JPG">
-    </div>
-     <div  class="step slide">
-           <img src="img/studio/04m.jpg">
-    </div>
-     <div  class="step slide">
-           <img src="img/dance/04m.jpg">
-    </div>
-     <div  class="step slide">
-           <img src="img/family/08m.jpg">
-    </div>
-    
-</div>
-  </section>  
-
-<script>
-function automatedPresentation() {
-    document.addEventListener("impress:stepenter", function (e) {
-        var duration = e.target.dataset.duration;
-        if (!duration) {
-            duration = 2000;
-        }
-        var timing = setTimeout(function() {
-        api.next()
-        }, duration);
-    }, false);
-    if (typeof timing !== "undefined") {
-        clearTimeout(timing);
-    }
-}
-</script>
-
-
-<script src="js/impress-layout.js"> </script>
-<script src="js/impress.js"> </script>
-<script> automatedPresentation(); 
-         layoutSnakeGrid({
-           numberOfColumns: 4,
-           distanceX: 1600,
-           distanceY: 1000 }); 
-</script>
-<script> var api = impress();</script>
-
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="http://dotmick.com/cms/site/themes/dotfolio/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="http://fgnass.github.io/spin.js/dist/spin.min.js"></script>
- 
-
-
-   <script defer src="js/script.js"></script>
-  
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="http://fgnass.github.io/spin.js/dist/spin.min.js"></script>
+      <script src="js/impress-layout.js"> </script>
+      <script src="js/impress.js"> </script>
+      <script> layoutSnakeGrid(); </script>
+      <script> var api = impress();</script>
+      <script defer src="js/script.js"></script>
 </body>
 </html>

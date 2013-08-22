@@ -1,20 +1,11 @@
-function layoutSnakeGrid(options) {
-    var numberOfColumns = options.numberOfColumns;
-    var distanceX = options.distanceX;
-    var distanceY = options.distanceY;
+function layoutSnakeGrid() {
+    var numberOfColumns = 4;
+    var distanceX = 1600;
+    var distanceY = 1000;
     var elements = document.querySelectorAll(".step");
-    var positionX = 100;
-    var positionY = 100;
+    var positionX = 0;
+    var positionY = 0;
     var rowType = "even";
-    if (!distanceX || distanceX < 900) {
-        distanceX = 1500;
-    }
-    if (!distanceY || distanceY < 700) {
-        distanceY = 1000;
-    }
-    if (!numberOfColumns || numberOfColumns < 1) {
-        numberOfColumns = 5;
-    }
     for (var index = 0; index < elements.length; index++) {
         elements[index].dataset.x = positionX;
         elements[index].dataset.y = positionY;
@@ -22,10 +13,10 @@ function layoutSnakeGrid(options) {
             positionY = positionY + distanceY;
             if (rowType === "even") {
                 rowType = "odd";
-                positionX = (distanceX * (numberOfColumns - 1)) + 100;
+                positionX = (distanceX * (numberOfColumns - 1));
             } else {
                 rowType = "even";
-                positionX = 100;
+                positionX = 0;
             }
         } else {
             if (rowType === "even") {
@@ -35,5 +26,16 @@ function layoutSnakeGrid(options) {
             }
         }
     }
+    document.addEventListener("impress:stepenter", function (e) {
+        var duration = 2000;
+        var timing = setTimeout(function() {
+        api.next();
+        }, duration);
+    }, false);
+    if (typeof timing !== "undefined") {
+        clearTimeout(timing);
+    }
 }
+
+
 
