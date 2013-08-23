@@ -26,15 +26,6 @@ function layoutSnakeGrid() {
             }
         }
     }
-    document.addEventListener("impress:stepenter", function (e) {
-        var duration = 2000;
-        var timing = setTimeout(function() {
-        api.next()
-        }, duration);
-    }, false);
-    if (typeof timing !== "undefined") {
-        clearTimeout(timing);
-    }
 }
 
 
