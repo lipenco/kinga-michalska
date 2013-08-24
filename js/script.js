@@ -83,10 +83,10 @@ $(window).load(function () {
         var n = $(this);
         n.css({
             position: "absolute"
-        }).wrap("<div class='img_wrapper' style='display: inline-block'>").clone().addClass("img_grayscale").css({
+        }).wrap("<div class='img_wrapper' style='display: inline-block'>").clone().addClass("").css({
             position: "absolute",
             "z-index": "998",
-            opacity: "0"
+            opacity: "1"
         }).insertBefore(n).queue(function () {
             var o = $(this);
             o.parent().css({
@@ -95,7 +95,6 @@ $(window).load(function () {
             });
             o.dequeue()
         });
-        // this.src = d(this.src)
     });
     $(".projectPreview").click(f);
      $("section#works").css("display", "none");
@@ -549,29 +548,6 @@ $(window).load(function () {
             context.arc((0.5 + o.position.x) | 0, (0.5 + o.position.y) | 0, o.size / 2, 0, Math.PI * 2, true);
             context.fill()
         }
-    }
-
-    function d(n) {
-        var p = document.createElement("canvas");
-        var v = p.getContext("2d");
-        var q = new Image();
-        q.src = n;
-        p.width = q.width;
-        p.height = q.height;
-        v.drawImage(q, 0, 0);
-        var o = v.getImageData(0, 0, p.width, p.height);
-        o = k(o, 100, -50);
-        for (var t = 0; t < o.height; t++) {
-            for (var u = 0; u < o.width; u++) {
-                var r = (t * 4) * o.width + u * 4;
-                var s = (o.data[r] + o.data[r + 1] + o.data[r + 2]) / 3;
-                o.data[r] = s;
-                o.data[r + 1] = s;
-                o.data[r + 2] = s
-            }
-        }
-        v.putImageData(o, 0, 0, 0, 0, o.width, o.height);
-        return p.toDataURL()
     }
 
     function k(s, n, p) {
