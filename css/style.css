@@ -139,13 +139,14 @@ header h1 {
 #nav ul {
     list-style: none;
     margin: 0;
+    margin: 20px;
     padding: 0;
     text-transform: lowercase;
 }
 
 section#works {
     display: none;
-    margin-top: 150px;
+    margin-top: 170px;
     position: absolute;
     width: 75%;
 }
@@ -268,12 +269,12 @@ p.project_p {
 
 section#about {
     display: none;
- /*  position: absolute;*/
-    left: 30px;
+    position: absolute;
+   left: 17%;
     width: 66%;
     opacity: .0;
-    margin: auto;
-    margin-top: 150px;
+    margin-top: 170px;
+     margin-bottom: 100px;
 }
 
 section#about p {
