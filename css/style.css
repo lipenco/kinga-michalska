@@ -70,7 +70,7 @@ a,a:link,a:visited,a:active,a:hover {
     text-decoration: none;
 }
 
-#nav a:hover,section#about a:hover {
+#nav a:hover, section#about a:hover {
     font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
     color: #353535;
     border-bottom: 1px solid gray;
@@ -430,6 +430,7 @@ height: 100%;
 }
 @media only screen and (min-width: 1382px) {
 }
+
 
 
 
