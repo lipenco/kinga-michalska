@@ -21,6 +21,7 @@ var prevScroll = 0;
 var page = "home";
 
 $(document).ready(function () {
+     $(".rslides").responsiveSlides();
     jQuery.extend(jQuery.browser, {
         SafariMobile: navigator.userAgent.toLowerCase().match(/iP(hone|ad|od)/i)
     });
