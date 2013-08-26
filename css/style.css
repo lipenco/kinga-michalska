@@ -421,15 +421,43 @@ height: 100%;
 
 }
 
+
 @media only screen and (min-width: 480px) {
+    .rslides {
+        top:20%;
+        left:10%;
+     }
+
 }
 @media only screen and (min-width: 600px) {
+  .rslides {
+        left:10%;
+        top:20%;
+     }
 }
 @media only screen and (min-width: 768px) {
+  .rslides {
+        left:10%;
+        top:0;
+     }
 }
 @media only screen and (min-width: 992px) {
+   .rslides {
+   left:10%;
+   top:0;
+  }   
 }
+@media only screen and (min-width: 1200px) {
+   .rslides {
+      left:0%;
+      top:0;
+    } 
+}
+
 @media only screen and (min-width: 1382px) {
+  .rslides {
+     left:0;
+  }
 }
 
 .rslides {
