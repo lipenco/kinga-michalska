@@ -33,7 +33,7 @@ $(document).ready(function () {
     if ($.browser.SafariMobile) {
         $("html").attr("class", "iphone")
     }
-  
+
     $("div#preloader").css("height", $(document).height());
     $.fn.spin = function (d) {
         this.each(function () {
@@ -81,6 +81,7 @@ $(window).load(function () {
     $("nav#nav #nav_carousel").css("cursor", "default");
     $("nav#nav #nav_carousel").css("opacity", "0.2");
 
+
     $(".projectThumbnail").each(function () {
         var n = $(this);
         n.css({
@@ -99,10 +100,15 @@ $(window).load(function () {
         });
     });
 
+    $(".rslides").responsiveSlides();
     $(".projectPreview").click(f);
      $("section#works").css("display", "none");
      $("section#carousel").css("display", "block");
      $("section#about").css("display", "none");
+  
+
+
+         
 
 
 
@@ -243,6 +249,7 @@ $(window).load(function () {
      function bg() {
         overThumb = false;
         a();
+        $(".rslides").responsiveSlides();
         $("nav#nav #nav_about").css("pointer-events", "auto");
         $("nav#nav #nav_about").css("cursor", "auto");
         $("nav#nav #nav_about").animate({
