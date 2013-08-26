@@ -130,7 +130,7 @@ header h1 {
     left: 130px;
     margin: 0;
     position: absolute;
-    top: 25px;
+    top: 12px;
     padding: 0;
     font-size: 11pt;
     font-weight: lighter;
@@ -144,7 +144,7 @@ header h1 {
     text-transform: lowercase;
 }
 
-.logo {
+/*.logo {
   width:115px; 
   height:115px;
   border-radius: 50%;
@@ -152,9 +152,12 @@ header h1 {
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+}*/
+
+.logo img {
+  width: 115px;
+  border-radius: 50%;
 }
-
-
 
 
 
