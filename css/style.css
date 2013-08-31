@@ -436,7 +436,7 @@ width: 85%;
     .project_image, #project_dance, #Projects {
       width: 400px;
       margin: 0;
-      top:20%;
+      margin-top:20%;
 
     }
     .projectTitle {
