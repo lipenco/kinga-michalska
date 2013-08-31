@@ -488,10 +488,70 @@ width: 85%;
 }
 
 @media only screen and (min-width: 480px) {
-    .rslides {
-        top:20%;
-        left:10%;
+        section#carousel  {
+        top:11%;
+        width: 400px;
      }
+
+    section#screens, section#screens ul {
+       margin-top: 20%;
+       position: absolute;
+       margin-left: 0px;
+       width: 400px;
+      }
+
+    .project_image, #project_dance, #Projects {
+      width: 400px;
+      margin: 0;
+    }
+    .projectTitle {
+       width: 360px;
+      font-size: 2em;
+      padding: 0 30px;
+    }
+   #upImg, footer {
+      display: none;
+    }
+
+    .projectTags {
+    padding: 0 30px;
+    width: 330px;
+   }
+   
+   #backImg  {
+    width: 115px;
+    height: 115px;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+   }
+
+   img#me {
+    width: 270px;
+    height: 190px;
+   }
+
+   section#about p {
+    width: 250px;
+    margin-bottom: 40px;
+   }
+   
+   p#hi {
+    width: 250px;
+    margin-left: 150px;
+    margin-top: 40px;
+   }
+   p#aboutme_p {
+    width: 350px;
+
+   }
+
+   section#about #link_email {
+    position: absolute;
+    top: 23%;
+    right: 20%;
+   }
+  
 }
 @media only screen and (min-width: 600px) {
   .rslides {
