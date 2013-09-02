@@ -196,8 +196,13 @@ section#screens ul li img {
 }
 
 section#screens ul li img:first-of-type {
-    margin-top: 30px;
+    margin-top: 40px;
 }
+
+.vertical {
+  margin-left: 133px;
+}
+
 
 .projectThumbnail::selection,section#about img::selection {
     background-color: #0ff;
