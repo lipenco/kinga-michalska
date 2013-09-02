@@ -302,11 +302,11 @@ p.project_p {
 section#about {
     display: none;
     position: absolute;
-   left: 17%;
+    left: 17%;
     width: 66%;
     opacity: .0;
-    margin-top: 170px;
-     margin-bottom: 100px;
+    margin-top: 120px;
+    margin-bottom: 100px;
 }
 
 section#about p {
@@ -317,7 +317,9 @@ section#about p {
 
 section#about img {
     display: block;
-    float: left;
+    position: absolute;
+    left: 7%;
+    top: 14.5%;
 }
 
 section#about p#hi {
@@ -353,6 +355,9 @@ section#about p#aboutme_p span#hireme {
 section#about ul#contacts {    
     width: 270px;
     list-style: none;
+    position: absolute;
+    left: 7%;
+    top: 58%;
 }
 
 section#about ul#contacts li {
