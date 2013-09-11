@@ -312,9 +312,9 @@ section#about {
 section#about .about-text {
   display: block;
     position: absolute;
-    left:5%;
+    width: 500px;
+    left:40%;
     top: 0;
-
 }
 
 section#about p {
@@ -493,7 +493,6 @@ width: 85%;
    }
    p#aboutme_p {
     width: 350px;
-
    }
 
    section#about #link_email {
@@ -501,39 +500,73 @@ width: 85%;
     top: 23%;
     right: 20%;
    }
+ 
+
   
 }
 
 
-@media only screen and (min-width: 600px) {
-  .rslides {
+@media only screen and (max-width: 600px) {
+    section#carousel  {
         left:10%;
-        top:20%;
+        top:11%;
+        width: 100%;
      }
+   section#about .about-text {
+    top:120%;
+    left:-5%;
+  }  
+
 }
-@media only screen and (min-width: 768px) {
-  .rslides {
-        left:10%;
-        top:0;
+@media only screen and (max-width: 768px) {
+   section#carousel  {
+        left:0%;
+        top:11%;
+        width: 100%;
      }
+
+   section#about .about-text {
+    top:120%;
+    left:-5%;
+  }  
+
+
 }
-@media only screen and (min-width: 992px) {
-   .rslides {
-   left:10%;
-   top:0;
-  }   
+@media only screen and (max-width: 992px) {
+   section#carousel  {
+        left:-15%;
+        top:21%;
+        width: 100%;
+     }
+  section#about .about-text {
+    top:120%;
+    left:-5%;
+  }  
+  img#me {
+    margin-left: 50%;
+   }
+
 }
-@media only screen and (min-width: 1200px) {
-   .rslides {
-      left:0%;
-      top:0;
-    } 
+@media only screen and (max-width: 1200px) {
+    section#carousel  {
+        left:-13%;
+        top:21%;
+        width: 100%;
+     }
+   img#me {
+    margin-left: -8%;
+   }
+
+   ul#contacts {
+     left: -8%;
+   }
+    section#about .about-text {
+    margin-left:5%;
+  } 
 }
 
-@media only screen and (min-width: 1382px) {
-  .rslides {
-     left:0;
-  }
+@media only screen and (max-width: 1382px) {
+ 
 }
 
 .rslides {
