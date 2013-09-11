@@ -309,18 +309,20 @@ section#about {
     margin-bottom: 100px;
 }
 
+section#about .about-text {
+  display: block;
+    position: absolute;
+    left:5%;
+    top: 0;
+
+}
+
 section#about p {
     display: block;
     width: 450px;
     float: right;
 }
 
-section#about img {
-    display: block;
-    position: absolute;
-    left: 7%;
-    top: 14.5%;
-}
 
 section#about p#hi {
     font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
@@ -355,9 +357,8 @@ section#about p#aboutme_p span#hireme {
 section#about ul#contacts {    
     width: 270px;
     list-style: none;
-    position: absolute;
-    left: 7%;
-    top: 58%;
+    position: absolute; 
+    top: 94%;
 }
 
 section#about ul#contacts li {
@@ -374,6 +375,10 @@ section#about ul#contacts li hr {
     margin: auto;
 }
 
+
+img#me {
+  margin-top: 8%;
+}
 
 
 /* ==========================================================================
