@@ -64,11 +64,13 @@ a,a:link,a:visited,a:active,a:hover {
     text-decoration: none;
 }
 
-#nav a,#nav a:link,#nav a:visited,section#about a,section#about a:link,section#about a:visited {
+footer p a, #nav a,#nav a:link,#nav a:visited,section#about a,section#about a:link,section#about a:visited {
     font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
     color: #353535;
     text-decoration: none;
 }
+
+
 
 #nav a:hover, section#about a:hover {
     font-family: Didot,'DidotLTStdRoman','Times New Roman',Times,serif;
