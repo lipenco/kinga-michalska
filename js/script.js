@@ -57,7 +57,7 @@ $(document).ready(function () {
         lines: 10,
         length: 0,
         width: 20,
-        radius: 0,
+        radius: 1,
         color: "#353535",
         speed: 1.6,
         trail: 63,
