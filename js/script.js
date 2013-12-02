@@ -86,7 +86,6 @@ $(window).load(function () {
     $("nav#nav #nav_carousel").css("pointer-events", "none");
     $("nav#nav #nav_carousel").css("cursor", "default");
     $("nav#nav #nav_carousel").css("opacity", "0.2");
-    $("section#screens").load('/screens.html');
 
 
     $(".projectThumbnail").each(function () {
@@ -190,9 +189,11 @@ $(window).load(function () {
                 overThumb = false;
                 $("section#screens ul li").each(function () {
                     if ($(this).attr("id") != "project_" + n) {
-                        $(this).css("display", "none")
+                        $(this).css("display", "none");
                     } else {
                         $(this).css("display", "block")
+                        $(this).load("/project_"+ n+".html");
+                        $('footer').css("display", "none");
                     }
                 });
                 $("section#works").css("height", $("section#screens").height());
