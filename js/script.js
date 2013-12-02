@@ -1,3 +1,8 @@
+// $(window).bind('load', function() { 
+//   // Stuff to do after everything is loaded; 
+// });
+
+
 var spinner;
 var fx = true;
 var canvas;
@@ -81,6 +86,7 @@ $(window).load(function () {
     $("nav#nav #nav_carousel").css("pointer-events", "none");
     $("nav#nav #nav_carousel").css("cursor", "default");
     $("nav#nav #nav_carousel").css("opacity", "0.2");
+    $("section#screens").load('/screens.html');
 
 
     $(".projectThumbnail").each(function () {
