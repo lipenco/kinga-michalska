@@ -3,11 +3,11 @@ html {
     font-style: italic;
     padding: 0;
     color: #353535;
-/*    background: rgba(234,234,234,0.7);*/
+   background: rgba(234,234,234,0.7);
     display: block;
     overflow-x: hidden;
     overflow-y: hidden;
-    background: #e8ddc4;
+/*    background: #e8ddc4;*/
 }
 
 section, h1, li, img {
