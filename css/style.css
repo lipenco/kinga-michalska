@@ -3,10 +3,11 @@ html {
     font-style: italic;
     padding: 0;
     color: #353535;
-    background: rgba(234,234,234,0.7);
+/*    background: rgba(234,234,234,0.7);*/
     display: block;
     overflow-x: hidden;
     overflow-y: hidden;
+    background: #e8ddc4;
 }
 
 section, h1, li, img {
@@ -356,10 +357,10 @@ section#about p#aboutme_p span#hireme {
 
 
 
-section#about ul#contacts {    
+section#about ul#contacts {
     width: 270px;
     list-style: none;
-    position: absolute; 
+    position: absolute;
     top: 94%;
 }
 
@@ -469,7 +470,7 @@ width: 85%;
     padding: 0 30px;
     width: 330px;
    }
-   
+
    #backImg  {
     width: 115px;
     height: 115px;
@@ -487,7 +488,7 @@ width: 85%;
     width: 250px;
     margin-bottom: 40px;
    }
-   
+
    p#hi {
     width: 250px;
     margin-left: 150px;
@@ -502,9 +503,9 @@ width: 85%;
     top: 23%;
     right: 20%;
    }
- 
 
-  
+
+
 }
 
 
@@ -517,7 +518,7 @@ width: 85%;
    section#about .about-text {
     top:120%;
     left:-5%;
-  }  
+  }
 
 }
 @media only screen and (max-width: 768px) {
@@ -530,7 +531,7 @@ width: 85%;
    section#about .about-text {
     top:120%;
     left:-5%;
-  }  
+  }
 
 
 }
@@ -543,7 +544,7 @@ width: 85%;
   section#about .about-text {
     top:120%;
     left:-5%;
-  }  
+  }
   img#me {
     margin-left: 50%;
    }
@@ -564,11 +565,11 @@ width: 85%;
    }
     section#about .about-text {
     margin-left:5%;
-  } 
+  }
 }
 
 @media only screen and (max-width: 1382px) {
- 
+
 }
 
 .rslides {
@@ -602,7 +603,3 @@ width: 85%;
   width: 100%;
   border: 0;
   }
-
-
-
-
