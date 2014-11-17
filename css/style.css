@@ -480,8 +480,9 @@ width: 85%;
    }
 
    img#me {
-    width: 270px;
+    width: 100%;
     height: 190px;
+
    }
 
    section#about p {
