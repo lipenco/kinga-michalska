@@ -471,13 +471,13 @@ width: 85%;
     width: 330px;
    }
 
-   #backImg  {
+   /*#backImg  {
     width: 115px;
     height: 115px;
     position: fixed;
     top: 12px;
     right: 12px;
-   }
+   }*/
 
    img#me {
     width: 100%;
